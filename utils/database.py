@@ -27,3 +27,8 @@ def create_post(title, content):
             id = last_id[0]+1
         cursor.execute('INSERT INTO posts VALUES(?,?,?)', (id, title, content))
 
+
+def delete_post(post_id):
+    with DatabaseConnection('data.db') as connection:
+        cursor = connection.cursor()
+        cursor.execute('DELETE FROM posts WHERE id=?', str(post_id))

@@ -25,7 +25,7 @@ def post(post_id):
         # return render_template('404.html', message=f'post number {post_id} was not found')
         return render_template('404.html', message=f'post number {post_id} was not found', posts=database.all_posts())
     # return render_template('post.html', post=post)
-    return render_template('post.html', cur_post=cur_post, posts=database.all_posts())
+    return render_template('post.html', cur_post=cur_post, posts=database.all_posts(), post_id=post_id)
 
 
 @app.route('/post/create', methods=['GET', 'POST'])
@@ -39,6 +39,12 @@ def create():
         # return redirect(url_for('post', post_id=post_id))
         return redirect(url_for('home'))
     return render_template('create.html', posts=database.all_posts())
+
+
+@app.route('/delete/<int:post_id>')
+def delete(post_id):
+    database.delete_post(post_id)
+    return redirect(url_for('home'))
 
 
 if __name__ == '__main__':

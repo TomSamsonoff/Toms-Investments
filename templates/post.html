@@ -6,5 +6,7 @@
     <h1>{{ cur_post['title'] }}</h1>
     <p>{{ cur_post['content'] }}</p>
 </div>
-
+<a href="{{ url_for('delete', post_id=post_id) }}">
+<button type="button">Delete</button>
+</a>
 {% endblock %}
