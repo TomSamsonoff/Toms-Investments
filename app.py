@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from utils import database
+from utils import database, graphs
 
 
 app = Flask(__name__)
@@ -45,6 +45,12 @@ def create():
 def delete(post_id):
     database.delete_post(post_id)
     return redirect(url_for('home'))
+
+
+@app.route('/stocks_graph')
+def stocks_graph():
+    html = graphs.stocks_graph()
+    return render_template('plot.html', posts=database.all_posts(), html=html)
 
 
 if __name__ == '__main__':
