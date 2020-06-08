@@ -73,3 +73,4 @@ class RealEstate:
         page_soup = BeautifulSoup(page_content, 'html.parser')
         first_page = PropertiesPage(page_soup)
         return first_page
+

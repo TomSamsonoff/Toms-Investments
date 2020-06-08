@@ -78,3 +78,5 @@ class RealEstateMap:
             except AttributeError:
                 coordinates.append((None, None))
         return coordinates
+
+
