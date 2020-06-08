@@ -18,7 +18,6 @@ pandas = "*"
 bokeh = "*"
 bs4 = "*"
 aiohttp = "*"
-folium = "*"
 
 [requires]
 python_version = "3.8.3"
