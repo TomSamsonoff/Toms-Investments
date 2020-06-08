@@ -13,6 +13,7 @@ Flask = "*"
 Jinja2 = "*"
 MarkupSafe = "*"
 Werkzeug = "*"
+yfinance = "*"
 
 [requires]
 python_version = "3.8"
