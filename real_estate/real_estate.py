@@ -23,9 +23,8 @@ def _get_df(properties):
 
 class RealEstate:
     """Class for getting the parameters of the properties in a given US state.
-
     Scraping the website: 'www.century21global.com' and extracting the relevant
-    parameters of all the properties using Beautifulsoup library.
+    parameters of all the properties.
     """
 
     def __init__(self, state):

@@ -68,7 +68,7 @@ def stocks_graph():
     """Displays a graph representing the stock history based on the user's choice of
     stock and time-frame.
     """
-    
+
     stocks = get_stocks()  # Getting a dict of all companies and their stock symbol.
 
     if request.method == "POST":
