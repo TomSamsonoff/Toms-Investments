@@ -40,7 +40,7 @@ header h1.logo:hover {
 }
 
 div.home {
-  padding: 10px 0 30px 0;
+  padding: 10px 0 10px 40px;
   background-color: #E6E6FA;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -48,7 +48,7 @@ div.home {
 }
 
 div.post {
-  padding: 10px 0 30px 0;
+  padding: 10px 0 30px 40px;
   background-color: #E6E6FA;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -56,8 +56,8 @@ div.post {
 }
 
 div.create {
-  padding: 10px 0 30px 0;
-  background-color: #f99de2;
+  padding: 10px 0 30px 40px;
+  background-color: #E6E6FA;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -69,6 +69,26 @@ div.not_found {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+}
+
+.container input, textarea {
+  width: 350px;
+  height: 15px;
+  font-size: 15px;
+  margin: 2px;
+  padding: 20px;
+}
+
+.container label {
+  display: table-cell;
+  vertical-align: top:
+}
+
+.container button {
+  width:70px;
+  height: 30px;
+  background-color: steelblue;
+  margin: 3px;
 }
 
 h2 {

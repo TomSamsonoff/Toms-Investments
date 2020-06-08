@@ -1,14 +1,18 @@
+"""This module is used to interact with the database"""
+
 from .database_connection import DatabaseConnection
 
 
-with DatabaseConnection('data.db') as connection:
+# Creating the table if it doesn't exist.
+with DatabaseConnection('posts.db') as connection:
     cursor = connection.cursor()
-
-    cursor.execute('CREATE TABLE IF NOT EXISTS posts(id integer primary key, title text, content text)')
+    cursor.execute('CREATE TABLE IF NOT EXISTS posts(id INTEGER PRIMARY KEY, title TEXT, content TEXT)')
 
 
 def all_posts():
-    with DatabaseConnection('data.db') as connection:
+    """returns all the posts as a dictionary."""
+
+    with DatabaseConnection('posts.db') as connection:
         cursor = connection.cursor()
         posts_lst = cursor.execute('SELECT * FROM posts').fetchall()
         if not posts_lst:
@@ -18,17 +22,13 @@ def all_posts():
 
 
 def create_post(title, content):
-    with DatabaseConnection('data.db') as connection:
+    with DatabaseConnection('posts.db') as connection:
         cursor = connection.cursor()
-        last_id = cursor.execute("SELECT * FROM posts ORDER BY id DESC LIMIT 1").fetchone()
-        if not last_id:
-            id = 0
-        else:
-            id = last_id[0]+1
-        cursor.execute('INSERT INTO posts VALUES(?,?,?)', (id, title, content))
+        cursor.execute('INSERT INTO posts(title, content) VALUES (?,?)', (title, content))
 
 
 def delete_post(post_id):
-    with DatabaseConnection('data.db') as connection:
+    with DatabaseConnection('posts.db') as connection:
         cursor = connection.cursor()
-        cursor.execute('DELETE FROM posts WHERE id=?', str(post_id))
+        cursor.execute('DELETE FROM posts WHERE id=?', [str(post_id)])
+

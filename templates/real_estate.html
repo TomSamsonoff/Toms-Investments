@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4>Once you choose a state and click the "Find" button, the app will:</h4>
+<ul>
+    <li>Display a table of the top 20 properties</li>
+    <li>Display a map with those properties (each one will contain a link)</li>
+    <li>You'll be able to download the entire list of properties (this could be a long one)</li>
+</ul>
+
+<form method="POST">
+    <div>
+        <label for="state">Choose a state:</label>
+          <select id="state" name="state" required>
+            <option hidden disabled selected value> -- select state -- </option>
+            {% for state in states %}
+                <option value="{{ state }}">{{ state }}</option>
+            {% endfor %}
+          </select>
+        <button type="submit"> Find </button>
+    </div>
+</form>
+{{btn|safe}}
+<div class="output">
+    {{table|safe}}
+    {{webmap|safe}}
+</div>
+<br><br>
+
+{% endblock %}

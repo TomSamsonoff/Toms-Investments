@@ -1,3 +1,5 @@
+"""A context manager for connecting to the database"""
+
 import sqlite3
 
 

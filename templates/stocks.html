@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<a>Once you choose a company's stock and a time-frame and click the "Find" button the app will display a chart</a><br>
+<h4>Just so you understand how to read the chart:</h4>
+<ul>
+    <li>Each day will have a vertical black line and a rectangular.</li>
+    <li>The vertical black line represents the whole range of value for that day</li>
+    <li>The rectangular represents the open and close value for the day.</li>
+    <li>A blue rectangular means the stock went down and red means it went up.</li>
+</ul>
+<br>
+<form oninput="x.value=parseInt(days.value)" method="POST">
+    <div>
+        <label for="stock">Choose a stock:</label>
+            <select id="stock" name="stock" required>
+            <option hidden disabled selected value> -- select stock -- </option>
+            {% for stock in stocks %}
+                <option value="{{ stock }}">{{ stock }}</option>
+            {% endfor %}
+            </select>
+            <br>
+            <input type="range" id="days" name="days" min="7" max="90" value="30" required>
+            <br>
+            Time frame (days): <output name="x" for="days"></output>
+            <br><br>
+        <button type="submit"> Find </button>
+    </div>
+</form>
+<div class="output">
+    {{html|safe}}
+</div>
+<br><br>
+
+{% endblock %}
+
