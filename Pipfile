@@ -16,6 +16,7 @@ Werkzeug = "*"
 yfinance = "*"
 pandas = "*"
 bokeh = "*"
+bs4 = "*"
 
 [requires]
 python_version = "3.8"
