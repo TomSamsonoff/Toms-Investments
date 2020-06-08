@@ -29,7 +29,7 @@ def _get_df(stock_symbol, days):
 
 
 def _get_plot(df, stock):
-    """Returns a plot base on the data-frame of the stock using the Bokeh library"""
+    """Returns a plot based on the data-frame of the stock using the Bokeh library"""
 
     hours_12 = 12*60*60*1000
 

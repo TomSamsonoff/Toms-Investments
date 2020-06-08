@@ -21,7 +21,7 @@ class PropertiesPage:
 
     @property
     def page_count(self):
-        """Returns the totla number of pages."""
+        """Returns the total number of pages."""
 
         # There are 20 listings in a page, hence the calculation.
         pages_count = math.ceil(self.listing_count/20)

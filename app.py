@@ -30,9 +30,8 @@ def home():
 
 @app.route('/post/<int:post_id>')
 def post(post_id):
-    """If the post doesn't exist in the database, it renders the '404.html' error page
-    with a message, and if it does it renders the 'post.html' page with the chosen post
-    along with the rest of the existing posts.
+    """Renders the 'post.html' page along with all the posts.
+    If the post id doesn't exist, renders the '404.html' error.
     """
     all_posts = database.all_posts()
     cur_post = all_posts.get(post_id)
@@ -44,8 +43,7 @@ def post(post_id):
 @app.route('/blog', methods=['GET', 'POST'])
 def blog():
     """Renders the 'blog.html' page along with all the posts.
-    If the form was submitted it get the :param title and :param content from the form
-    and adds the new post to the database.
+    If the form was submitted, adds the new post to the database.
     """
     if request.method == 'POST':
         title = request.form.get('title')
@@ -87,7 +85,7 @@ def real_estate():
     """
 
     global state
-    all_states = get_states()
+    all_states = get_states()  # Getting a dict of all US state and their abbreviations.
 
     if request.method == "POST":
         state = request.form.get('state')

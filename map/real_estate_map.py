@@ -43,15 +43,16 @@ class RealEstateMap:
         coordinates = self._get_coordinates()
         self.df['LAT'] = [c[0] for c in coordinates]
         self.df['LNG'] = [c[1] for c in coordinates]
+
         self.df.dropna(subset=['Address', 'Link', 'LAT', 'LNG'], how='any', inplace=True)
         geos = zip(self.df.loc[:, 'Address'], self.df.loc[:, 'Link'], self.df.loc[:, 'LAT'], self.df.loc[:, 'LNG'])
         return geos
 
     def _get_coordinates(self):
-        """Getting the coordinates of all the addresses by scraping the
-        google maps search result of each address.
+        """Extracting the coordinates of all the addresses by scraping the
+        google-maps search result of each address.
         By making asynchronous requests I minimize the running time
-        substantially. Returning a list of all the coordinates.
+        substantially. Returning a list of tuples of all the coordinates.
         """
 
         coordinates = []
@@ -68,9 +69,11 @@ class RealEstateMap:
             page_soup = BeautifulSoup(page_content, 'html.parser')
             try:
                 url = page_soup.select_one('head meta[itemprop="image"]').attrs['content']
+
                 phrase = 'center=(.*?)&'
                 coord_str = re.search(phrase, url).group(1)
                 lat, lng = coord_str.split('%2C')
+
                 coordinates.append((float(lat), float(lng)))
             except AttributeError:
                 coordinates.append((None, None))

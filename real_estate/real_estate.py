@@ -27,6 +27,7 @@ class RealEstate:
     Scraping the website: 'www.century21global.com' and extracting the relevant
     parameters of all the properties using Beautifulsoup library.
     """
+
     def __init__(self, state):
         self.base_url = f'https://www.century21global.com/for-sale-residential/USA/{state}?pageNo='
         self.pages_count = self.first_page.page_count
