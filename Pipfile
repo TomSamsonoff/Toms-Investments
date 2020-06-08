@@ -17,6 +17,7 @@ yfinance = "*"
 pandas = "*"
 bokeh = "*"
 bs4 = "*"
+aiohttp = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.8.2"
