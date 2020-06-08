@@ -33,6 +33,7 @@ def post(post_id):
     """Renders the 'post.html' page along with all the posts.
     If the post id doesn't exist, renders the '404.html' error.
     """
+
     all_posts = database.all_posts()
     cur_post = all_posts.get(post_id)
     if not cur_post:
@@ -45,6 +46,7 @@ def blog():
     """Renders the 'blog.html' page along with all the posts.
     If the form was submitted, adds the new post to the database.
     """
+
     if request.method == 'POST':
         title = request.form.get('title')
         content = request.form.get('content')
@@ -66,6 +68,7 @@ def stocks_graph():
     """Displays a graph representing the stock history based on the user's choice of
     stock and time-frame.
     """
+    
     stocks = get_stocks()  # Getting a dict of all companies and their stock symbol.
 
     if request.method == "POST":
