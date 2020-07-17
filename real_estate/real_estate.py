@@ -5,22 +5,6 @@ from .pages.properties_page import PropertiesPage
 from utils import async_fetch
 
 
-def _get_df(properties):
-    """Returns a data-frame object based on a given
-    list of PropertyParser objects.
-    """
-
-    # List of data-frame objects -- each for every property.
-    prop_lst = [pandas.DataFrame(
-        [[p.price, p.state, p.address, p.size, p.description, p.link]],
-        columns=['Price', 'State', 'Address', 'Size', 'Description', 'Link'])
-        for p in properties]
-
-    df = pandas.concat(prop_lst, ignore_index=True)
-    df.index += 1
-    return df
-
-
 class RealEstate:
     """Class for getting the parameters of the properties in a given US state.
     Scraping the website: 'www.century21global.com' and extracting the relevant
@@ -37,7 +21,7 @@ class RealEstate:
         """Returns a data-frame of all the properties showing in the first page."""
 
         properties = self.first_page.properties  # List of PropertyParser objects
-        df = _get_df(properties)
+        df = self._get_df(properties)
         return df
 
     @property
@@ -62,7 +46,7 @@ class RealEstate:
             page = PropertiesPage(page_soup)
             properties.extend(page.properties)
 
-        df = _get_df(properties)
+        df = self._get_df(properties)
         return df
 
     @property
@@ -73,4 +57,20 @@ class RealEstate:
         page_soup = BeautifulSoup(page_content, 'html.parser')
         first_page = PropertiesPage(page_soup)
         return first_page
+
+    @staticmethod
+    def _get_df(properties):
+        """Returns a data-frame object based on a given
+        list of PropertyParser objects.
+        """
+
+        # List of data-frame objects -- each for every property.
+        prop_lst = [pandas.DataFrame(
+            [[p.price, p.state, p.address, p.size, p.description, p.link]],
+            columns=['Price', 'State', 'Address', 'Size', 'Description', 'Link'])
+            for p in properties]
+
+        df = pandas.concat(prop_lst, ignore_index=True)
+        df.index += 1
+        return df
 
