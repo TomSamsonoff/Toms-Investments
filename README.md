@@ -5,8 +5,8 @@
 * [Installation](#installation)
 
 ## General info
-A website for exploring different types of investments.
-You can check out real-estate deals and stocks history, as well as playing around with the blog.
+A website for exploring different types of investments.  
+You can check out real-estate deals and stocks history, as well as playing around with the blog.  
 The website can be found at: https://tomsinvestments.herokuapp.com
 
 ## Technologies
