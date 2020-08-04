@@ -2,31 +2,42 @@
 
 {% block content %}
 
-<div class="container">
-        <ul>
-            {% for post_id, post in posts.items() %}
-            <li><a href="{{ url_for('post', post_id=post_id) }}">{{ post['title'] }}</a></li>
-            {% endfor %}
-        </ul>
-</div>
+<main role="main" class="container">
+	<div class="row">
+		<div class="col-md-8 blog-main">
+			<div class="py-4 create border-bottom">
+				<h3 class="pb-4 mb-4 border-bottom">
+					Create post
+				</h3>
+				<form method="POST">
+					<div class="form-group">
+						<h5>Title</h5>
+						<input class="form-control form-control-lg" type="text" name="title" id="title" required>
+					</div>
+						<div class="form-group">
+							<h5>Content</h5>
+							<textarea class="form-control" name="content" id="content" rows="3" required></textarea>
+						</div>
+					<button type="submit" class="btn btn-primary"> Submit </button>
+				</form>
+			</div>
+			{{post|safe}}
+    	</div>
 
-<div class="create">
-	<h1>Create post</h1>
-	<form method="POST">
-		<div>
-			<label for="title">Title</label>
-			<input type="text" name="title" id="title"  required/>
-		</div>
+		<aside class="col-md-4 blog-sidebar">
+			<div class="p-4">
+				<h3>All Posts</h3>
+				<ol class="list-unstyled mb-0">
+					{% for post_id, post in posts.items() %}
+					<li><a href="{{ url_for('blog', post_id=post_id) }}">{{ post['title'] }}</a></li>
+					{% endfor %}
+				</ol>
+			</div>
 
-		<div>
-			<label for="content">Content</label>
-			<textarea name="content" id="content" required></textarea>
-		</div>
+	</aside>
+	</div>
 
-		<div>
-			<button type="submit"> Submit </button>
-		</div>
-	</form>
-</div>
+</main>
+
 
 {% endblock %}

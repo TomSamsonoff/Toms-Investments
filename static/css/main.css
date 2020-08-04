@@ -5,9 +5,6 @@ body {
   color: #060;
 }
 
-/*
- * Formatting the header area
- */
 
 header {
   background-color: #DFB887;
@@ -30,9 +27,7 @@ header h1.logo:hover {
   text-decoration: none;
 }
 
-/*
- * Center the body content
- */
+
 
 .container {
   width: 1200px;
@@ -108,3 +103,4 @@ div.not_found {
   color: #444;
   text-decoration: none;
 }
+

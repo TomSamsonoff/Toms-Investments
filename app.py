@@ -28,6 +28,11 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 @app.route('/post/<int:post_id>')
 def post(post_id):
     """Renders the 'post.html' page along with all the posts.
@@ -38,11 +43,12 @@ def post(post_id):
     cur_post = all_posts.get(post_id)
     if not cur_post:
         return render_template('404.html', message=f'post number {post_id} was not found')
-    return render_template('post.html', cur_post=cur_post, posts=database.all_posts(), post_id=post_id)
+    return render_template('post.html', cur_post=cur_post, posts=all_posts, post_id=post_id)
 
 
+@app.route('/blog/<int:post_id>', methods=['GET', 'POST'])
 @app.route('/blog', methods=['GET', 'POST'])
-def blog():
+def blog(post_id=None):
     """Renders the 'blog.html' page along with all the posts.
     If the form was submitted, adds the new post to the database.
     """
@@ -52,6 +58,11 @@ def blog():
         content = request.form.get('content')
         database.create_post(title, content)
         return render_template('blog.html', posts=database.all_posts())
+    if post_id:
+        all_posts = database.all_posts()
+        cur_post = all_posts.get(post_id)
+        return render_template('blog.html', posts=database.all_posts(),
+                               post=render_template('post.html', cur_post=cur_post, post_id=post_id))
     return render_template('blog.html', posts=database.all_posts())
 
 
@@ -76,8 +87,9 @@ def stocks_graph():
         stock = request.form.get('stock')
         stock_symbol = stocks[stock]
 
-        html = chart(stock, stock_symbol, days)
-        return render_template('stocks.html', stocks=stocks.keys(), html=html)
+        chart_html = chart(stock, stock_symbol, days)
+        return render_template('stocks.html', stocks=stocks.keys(), chart_html=chart_html,
+                               explanation=render_template('stocks_explanation.html'))
     return render_template('stocks.html', stocks=stocks.keys())
 
 
@@ -101,8 +113,10 @@ def real_estate():
         count = re.listings_count  # Total number of listings
         table = top_properties_df.drop(['Link'], axis=1)
         web_map = RealEstateMap(top_properties_df)
-        return render_template('real_estate.html', table=table.to_html(), webmap=web_map.get_html,
-                               states=all_states.keys(), btn=render_template('download.html', count=count))
+        return render_template('real_estate.html',
+                               table=table.to_html(classes=['table', 'table-hover', 'table-sm', 'table-info']),
+                               webmap=web_map.get_html, states=all_states.keys(),
+                               btn=render_template('download.html', count=count))
     return render_template('real_estate.html', states=all_states.keys())
 
 

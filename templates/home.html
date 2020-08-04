@@ -1,20 +1,65 @@
 {% extends 'base.html' %}
 
+{% block prev %}
+<div class="jumbotron home-jmb bg-cover" style="background-image: url('static/images/home_page_bg.jpg');">
+    <div class="container mt-4">
+        <h2 class="mb-4 text-dark">Welcome Investors!</h2>
+        <h5 class="text-dark">Knowing where to invest your money is never an easy task...</h5>
+        <h5 class="text-dark">So here is a site to help you explore some types of investments so you can make better decisions.</h5>
+        <h5 class="text-dark">Feel free to explore!</h5>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
 
-<div class="home">
-    <h2>Welcome to Tom's Investments Helper!</h2>
-    <h4>A website for all your investments research needs.</h4>
-    <h4>But first of all... special thanks to:</h4>
-    <ul>
-        <li><em>BeautifulSoup</em> -- for scraping</li><br>
-        <li><em>Pandas</em> -- for managing data</li><br>
-        <li><em>sqlite3</em> -- for interacting with database</li><br>
-        <li><em>aiohttp</em> -- for multi-threading</li><br>
-        <li><em>Bokeh</em> -- for displaying a graph</li><br>
-        <li><em>Folium</em> -- for displaying a map</li><br>
-        <li><em>yfinance</em> -- for getting stocks information</li><br>
-        <li><em>Flask</em> -- for building the website</li><br>
-    </ul>
-</div>
+<section class="section bg-light">
+         <div class="row">
+          <div class="col-md-6">
+            <a href="{{ url_for('real_estate') }}" class="card border-0 mb-3 mb-md-0 text-decoration-none">
+              <div class="card-img-top">
+                <img src="static/images/re_image.jpg" alt="Real estate header" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title my-color">
+                  Real Estate
+                </h4>
+                <p class="card-text text-muted">
+                  Explore the hottest real estate deals right now.
+                </p>
+                <button type="button" class="btn btn-primary my-2" href="{{ url_for('real_estate') }}">Explore Real Estate</button>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-4">
+            <a href="{{ url_for('stocks_graph') }}" class="card border-0 mb-3 mb-md-0 text-decoration-none">
+              <div class="card-img-top">
+                <img src="static/images/stocks_image.png" alt="Stocks header" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title my-color">
+                  Stock Market
+                </h4>
+                <p class="card-text text-muted">
+                  Check out the most up to date top companies stocks fluctuation.
+                </p>
+                  <button type="button" class="btn btn-primary my-2" href="{{ url_for('stocks_graph') }}">Explore Stocks Market</button>
+              </div>
+            </a>
+          </div>
+        </div>
+</section>
+
+<hr>
+
+<section class="section bg-white">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 text-center pt-4 mb-4">
+            <h4 class="mb-3 my-color">Check out our blog</h4>
+            <p class="lh-190 text-muted">You can write or delete posts as much as you like.</p>
+            <a class="btn btn-primary" href="{{ url_for('blog') }}">Go to blog</a>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

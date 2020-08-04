@@ -2,26 +2,102 @@
 <html lang="en">
   <head>
       <title>Flask App</title>
-      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{url_for('static',filename='css/custom.css')}}">
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 class="logo">Tom's Investments Helper</h1>
-        <strong><nav>
-            <ul class="menu">
-                <li><a href="https://github.com/TomSamsonoff/Toms-Investments" target="_blank">Code</a></li>
-                <li><a href="{{ url_for('real_estate') }}">Real Estate</a></li>
-                <li><a href="{{ url_for('stocks_graph') }}">Stocks</a></li>
-                <li><a href="{{ url_for('blog') }}">Blog</a></li>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-            </ul>
-        </nav></strong>
+  <body class="bg-light">
+
+  <header class="blog-header py-1 sticky-top">
+    <div class="row flex-nowrap justify-content-md-center align-items-center">
+      <div class="col-md-12 text-center">
+        <h1 class="blog-header-logo text-dark">Wise Investment</h1>
       </div>
+    </div>
+
+  <hr width="50%">
+
+  <div class="nav-scroller py-1 mb-0">
+    <nav class="nav d-flex justify-content-center">
+      <a class="p-2 text-dark mr-md-4" href="{{ url_for('home') }}">Home </a>
+      <a class="p-2 text-dark mr-md-4" href="{{ url_for('real_estate') }}">Real Estate</a>
+      <a class="p-2 text-dark mr-md-4" href="{{ url_for('stocks_graph') }}">Stocks</a>
+      <a class="p-2 text-dark mr-md-4" href="{{ url_for('blog') }}">Blog</a>
+        <a class="p-2 text-dark mr-md-4" href="{{ url_for('about') }}">About</a>
+      <a class="p-2 text-dark mr-md-4" href="https://github.com/TomSamsonoff/Toms-Investments" target="_blank">Code</a>
+    </nav>
+  </div>
     </header>
+
+
+
+
+<!--    <header>-->
+<!--        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">-->
+<!--          <a class="navbar-brand" href="#">Wise Investment</a>-->
+<!--          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--          </button>-->
+<!--          <div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+<!--            <ul class="navbar-nav ml-auto flex-nowrap">-->
+<!--              <li class="nav-item">-->
+<!--                  <a class="nav-link" href="{{ url_for('home') }}">Home </a>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>-->
+<!--              </li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        Investment Channels-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--                        <a class="dropdown-item" href="{{ url_for('real_estate') }}">Real Estate</a>-->
+<!--                        <a class="dropdown-item" href="{{ url_for('stocks_graph') }}">Stocks</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" href="https://github.com/TomSamsonoff/Toms-Investments" target="_blank">Code</a>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </nav>-->
+<!--    </header>-->
+
+
+<!--      <div class="container">-->
+<!--        <h1 class="logo">Wise Investment</h1>-->
+<!--        <strong><nav>-->
+<!--            <ul class="menu">-->
+<!--                <li><a href="https://github.com/TomSamsonoff/Toms-Investments" target="_blank">Code</a></li>-->
+<!--                <li><a href="{{ url_for('real_estate') }}">Real Estate</a></li>-->
+<!--                <li><a href="{{ url_for('stocks_graph') }}">Stocks</a></li>-->
+<!--                <li><a href="{{ url_for('blog') }}">Blog</a></li>-->
+<!--                <li><a href="{{ url_for('home') }}">Home</a></li>-->
+<!--            </ul>-->
+<!--        </nav></strong>-->
+<!--      </div>-->
+
+{% block prev %}
+{% endblock %}
+
     <div class="container">
         {% block content %}
         {% endblock %}
     </div>
+
+<hr>
+<footer class="footer">
+<div class="font-size-ms text-muted text-center bg-light pt-3 pb-3">
+  © Created by Tom Samsonoff -
+  <a class="text-muted" href="https://github.com/TomSamsonoff/Toms-Investments" target="_blank">
+    Code
+  </a>
+</div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

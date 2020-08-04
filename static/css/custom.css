@@ -1,0 +1,51 @@
+html,body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+h4, h3, h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+h2 {
+    font-family: Bookman Old Style
+}
+
+
+.my-color {
+  color: #0070c4 !important;
+}
+
+.home-jmb {
+    height: 350px;
+}
+
+.about-jmb {
+    height: 100%;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+hr {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: radial-gradient(ellipse at bottom, #e6bd65, #f5eedf);
+}
+

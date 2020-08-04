@@ -1,21 +1,8 @@
-{% extends 'base.html' %}
-
-{% block content %}
-
-<div class="container">
-        <ul>
-            {% for post_id, post in posts.items() %}
-            <li><a href="{{ url_for('post', post_id=post_id) }}">{{ post['title'] }}</a></li>
-            {% endfor %}
-        </ul>
-</div>
-
+<br>
 <div class="post">
-    <h1>{{ cur_post['title'] }}</h1>
+    <h3>{{ cur_post['title'] }}</h3>
     <p>{{ cur_post['content'] }}</p>
 </div>
 <a href="{{ url_for('delete', post_id=post_id) }}">
-<button type="button">Delete</button>
+<button type="button" class="btn btn-primary bg-info">Delete</button>
 </a>
-
-{% endblock %}

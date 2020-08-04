@@ -1,35 +1,40 @@
 {% extends 'base.html' %}
 
+{% block prev %}
+<div class="jumbotron bg-cover" style="background-image: url('static/images/stocks_bg.jpg');">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-10 col-md-8 col-lg-6">
+                <form method="post">
+                    <div class="form-group text-center">
+                        <h4 class="pb-2"><strong>Choose a stock:</strong></h4>
+                        <select class="form-control form-control-lg" id="stock" name="stock" required>
+                            <option hidden disabled selected value> -- select stock -- </option>
+                            {% for stock in stocks %}
+                                <option value="{{ stock }}">{{ stock }}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <input type="range" class="col-8" id="days" name="days" min="7" max="90" value="30" oninput="days_output.value = days.value" required>
+                        <br>
+                        <a><strong>Time frame (days): <output name="x" id="days_output" for="days">30</output></strong></a>
+                        <br><br>
+                        <button type="submit" class="btn btn-primary"> Find Stock Chart </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
 
-<a>Once you choose a company's stock and a time-frame and click the "Find" button the app will display a chart</a><br>
-<h4>Just so you understand how to read the chart:</h4>
-<ul>
-    <li>Each day will have a vertical black line and a rectangular.</li>
-    <li>The vertical black line represents the whole range of value for that day</li>
-    <li>The rectangular represents the open and close value for the day.</li>
-    <li>A blue rectangular means the stock went up and red means it went down.</li>
-</ul>
-<br>
-<form oninput="x.value=parseInt(days.value)" method="POST">
-    <div>
-        <label for="stock">Choose a stock:</label>
-            <select id="stock" name="stock" required>
-            <option hidden disabled selected value> -- select stock -- </option>
-            {% for stock in stocks %}
-                <option value="{{ stock }}">{{ stock }}</option>
-            {% endfor %}
-            </select>
-            <br>
-            <input type="range" id="days" name="days" min="7" max="90" value="30" required>
-            <br>
-            Time frame (days): <output name="x" for="days"></output>
-            <br><br>
-        <button type="submit"> Find </button>
-    </div>
-</form>
+
 <div class="output">
-    {{html|safe}}
+    {{chart_html|safe}}
+    {{explanation|safe}}
+
 </div>
 <br><br>
 
