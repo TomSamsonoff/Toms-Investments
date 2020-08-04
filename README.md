@@ -32,8 +32,8 @@ The website can be found at: https://wise-investment.herokuapp.com/
 Clone project repository:
 
 ```bash
-$ git clone https://github.com/TomSamsonoff/Wise-Investment.git
-$ cd Wise-Investments
+$ git clone https://github.com/TomSamsonoff/Toms-Investments.git
+$ cd Toms-Investments
 ```
 
 Install dependecies from Pipfile:
