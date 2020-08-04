@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="946afb99-4b99-4b16-b1ad-7ca58453f497" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Flask_app" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1b8I9PQxy5UaCLCZYJtWRpXwgUz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Toms-Investments\static" />
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Toms-Investments\images" />
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Toms-Investments\static\css" />
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Flask_app\stocks" />
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Flask_app\maps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Toms-Investments\static\images" />
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Toms-Investments\images" />
+      <recent name="C:\Users\Tom Samsonoff\Desktop\python course projects\Flask_app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="re_map (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapers/re_map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="re_map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Tom Samsonoff\Desktop\python course projects\Flask_app\scrapers\re_map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="re_map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Tom Samsonoff\Desktop\python course projects\Flask_app\scrapers\re_map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="real_estate (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/real_estate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/real_estate/real_estate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.real_estate (1)" />
+        <item itemvalue="Python.database" />
+        <item itemvalue="Python.re_map (1)" />
+        <item itemvalue="Python.re_map" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="946afb99-4b99-4b16-b1ad-7ca58453f497" name="Default Changelist" comment="" />
+      <created>1588007141991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588007141991</updated>
+    </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1589481183185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589481183185</updated>
+    </task>
+    <task id="LOCAL-00002" summary="css commit">
+      <created>1590573126990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590573126990</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="second commit" />
+    <MESSAGE value="css commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="css commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="468" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595955771944">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="468" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1376.733@0.0.1376.733" timestamp="1595955771944" />
+    <state x="570" y="77" key="#xdebugger.evaluate" timestamp="1591268865737">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="570" y="77" key="#xdebugger.evaluate/0.0.1376.733@0.0.1376.733" timestamp="1591268865737" />
+    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1590573125704">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="326" y="0" key="CommitChangelistDialog2/0.0.1376.733@0.0.1376.733" timestamp="1590573125704" />
+    <state width="490" height="445" key="DebuggerActiveHint" timestamp="1591116056704">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="490" height="445" key="DebuggerActiveHint/0.0.1376.733@0.0.1376.733" timestamp="1591116056704" />
+    <state x="93" y="93" width="1190" height="547" key="DiffContextDialog" timestamp="1590573935989">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="93" y="93" width="1190" height="547" key="DiffContextDialog/0.0.1376.733@0.0.1376.733" timestamp="1590573935989" />
+    <state x="469" y="122" key="FileChooserDialogImpl" timestamp="1592138366907">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="469" y="122" key="FileChooserDialogImpl/0.0.1376.733@0.0.1376.733" timestamp="1592138366907" />
+    <state width="1355" height="142" key="GridCell.Tab.0.bottom" timestamp="1596547766775">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="142" key="GridCell.Tab.0.bottom/0.0.1376.733@0.0.1376.733" timestamp="1596547766775" />
+    <state width="1355" height="142" key="GridCell.Tab.0.center" timestamp="1596547766775">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="142" key="GridCell.Tab.0.center/0.0.1376.733@0.0.1376.733" timestamp="1596547766775" />
+    <state width="1355" height="142" key="GridCell.Tab.0.left" timestamp="1596547766775">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="142" key="GridCell.Tab.0.left/0.0.1376.733@0.0.1376.733" timestamp="1596547766775" />
+    <state width="1355" height="142" key="GridCell.Tab.0.right" timestamp="1596547766775">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="142" key="GridCell.Tab.0.right/0.0.1376.733@0.0.1376.733" timestamp="1596547766775" />
+    <state width="1355" height="157" key="GridCell.Tab.1.bottom" timestamp="1596460668790">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="157" key="GridCell.Tab.1.bottom/0.0.1376.733@0.0.1376.733" timestamp="1596460668790" />
+    <state width="1355" height="157" key="GridCell.Tab.1.center" timestamp="1596460668789">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="157" key="GridCell.Tab.1.center/0.0.1376.733@0.0.1376.733" timestamp="1596460668789" />
+    <state width="1355" height="157" key="GridCell.Tab.1.left" timestamp="1596460668789">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="157" key="GridCell.Tab.1.left/0.0.1376.733@0.0.1376.733" timestamp="1596460668789" />
+    <state width="1355" height="157" key="GridCell.Tab.1.right" timestamp="1596460668789">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="1355" height="157" key="GridCell.Tab.1.right/0.0.1376.733@0.0.1376.733" timestamp="1596460668789" />
+    <state x="197" y="9" key="SettingsEditor" timestamp="1590574021756">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="197" y="9" key="SettingsEditor/0.0.1376.733@0.0.1376.733" timestamp="1590574021756" />
+    <state x="539" y="283" key="VCS.ChangelistChooser" timestamp="1590572573255">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="539" y="283" key="VCS.ChangelistChooser/0.0.1376.733@0.0.1376.733" timestamp="1590572573255" />
+    <state width="695" height="373" key="XDebugger.FullValuePopup" timestamp="1591114274858">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state width="695" height="373" key="XDebugger.FullValuePopup/0.0.1376.733@0.0.1376.733" timestamp="1591114274858" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1596547976454">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1376.733@0.0.1376.733" timestamp="1596547976454" />
+    <state x="263" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596023045334">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="263" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1376.733@0.0.1376.733" timestamp="1596023045334" />
+    <state x="266" y="103" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1591116215892">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="266" y="103" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1376.733@0.0.1376.733" timestamp="1591116215892" />
+    <state x="345" y="20" width="672" height="676" key="search.everywhere.popup" timestamp="1596035468334">
+      <screen x="0" y="0" width="1376" height="733" />
+    </state>
+    <state x="345" y="20" width="672" height="676" key="search.everywhere.popup/0.0.1376.733@0.0.1376.733" timestamp="1596035468334" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="python-exception">
+          <properties exception="BaseException" />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
