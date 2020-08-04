@@ -33,7 +33,7 @@ Clone project repository:
 
 ```bash
 $ git clone https://github.com/TomSamsonoff/Wise-Investment.git
-$ cd Toms-Investments
+$ cd Wise-Investments
 ```
 
 Install dependecies from Pipfile:
