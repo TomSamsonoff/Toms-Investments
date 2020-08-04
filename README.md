@@ -7,7 +7,7 @@
 ## General info
 A website for exploring different types of investments.  
 You can check out real-estate deals and stocks history, as well as playing around with the blog.  
-The website can be found at: https://tomsinvestments.herokuapp.com
+The website can be found at: https://wise-investment.herokuapp.com/
 
 ## Technologies
 
@@ -32,7 +32,7 @@ The website can be found at: https://tomsinvestments.herokuapp.com
 Clone project repository:
 
 ```bash
-$ git clone https://github.com/TomSamsonoff/Toms-Investments.git
+$ git clone https://github.com/TomSamsonoff/Wise-Investment.git
 $ cd Toms-Investments
 ```
 
