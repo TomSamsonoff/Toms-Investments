@@ -33,19 +33,6 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/post/<int:post_id>')
-def post(post_id):
-    """Renders the 'post.html' page along with all the posts.
-    If the post id doesn't exist, renders the '404.html' error.
-    """
-
-    all_posts = database.all_posts()
-    cur_post = all_posts.get(post_id)
-    if not cur_post:
-        return render_template('404.html', message=f'post number {post_id} was not found')
-    return render_template('post.html', cur_post=cur_post, posts=all_posts, post_id=post_id)
-
-
 @app.route('/blog/<int:post_id>', methods=['GET', 'POST'])
 @app.route('/blog', methods=['GET', 'POST'])
 def blog(post_id=None):
