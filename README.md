@@ -36,7 +36,7 @@ $ git clone https://github.com/TomSamsonoff/Toms-Investments.git
 $ cd Toms-Investments
 ```
 
-Install from Pipfile:
+Install dependecies from Pipfile:
 
 ```bash
 $ pipenv install
