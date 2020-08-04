@@ -5,4 +5,4 @@ posts.db
 Procfile
 usa_states
 stocks_symbols
-images.*
+static/images/
