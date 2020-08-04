@@ -1,0 +1,8 @@
+__pycache__/
+.idea/
+posts.db
+usa_states
+stocks_symbols
+static/images/
+Procfile
+runtime.txt
