@@ -53,3 +53,8 @@ Run the app locally:
 ```bash
 $ python app.py
 ```
+
+**Of course, you would lack the files in the .gitignore,  
+so the app won't run correctly on your local machine.**
+
+You can view the web app here: https://wise-investment.herokuapp.com
